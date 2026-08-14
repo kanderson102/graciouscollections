@@ -18,9 +18,9 @@ export const Header: React.FC = () => {
       <div className={styles.mainNav}>
         <div className="container">
           <div className={styles.navWrapper}>
-            
+
             {/* Mobile Menu Toggle */}
-            <button 
+            <button
               className={styles.mobileToggle}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
@@ -35,7 +35,7 @@ export const Header: React.FC = () => {
             <div className={styles.logo}>
               <Link href="/">
                 <h1>GRACIOUS COLLECTIONS</h1>
-                <p>VINTAGE FOR THE MODERN WOMAN</p>
+                <p>FEMININE STYLE - VINTAGE INSPIRED</p>
               </Link>
             </div>
 
@@ -47,8 +47,8 @@ export const Header: React.FC = () => {
               <button aria-label="Account" className={styles.actionBtn + " " + styles.desktopOnly}>
                 <User size={18} strokeWidth={1.5} />
               </button>
-              <button 
-                aria-label="Cart" 
+              <button
+                aria-label="Cart"
                 className={styles.cartBtn}
                 onClick={openCart}
               >
@@ -67,9 +67,9 @@ export const Header: React.FC = () => {
             <li>
               <Link href="/" className={styles.navLink}>HOME</Link>
             </li>
-            
+
             {/* SHOP Dropdown */}
-            <li 
+            <li
               className={styles.dropdownParent}
               onMouseEnter={() => setShopOpen(true)}
               onMouseLeave={() => setShopOpen(false)}
@@ -88,7 +88,7 @@ export const Header: React.FC = () => {
             </li>
 
             {/* CONTACT Dropdown */}
-            <li 
+            <li
               className={styles.dropdownParent}
               onMouseEnter={() => setContactOpen(true)}
               onMouseLeave={() => setContactOpen(false)}
@@ -122,7 +122,7 @@ export const Header: React.FC = () => {
             <li>
               <Link href="/" onClick={() => setMobileMenuOpen(false)}>HOME</Link>
             </li>
-            
+
             {/* SHOP Section */}
             <li>
               <span className={styles.mobileSectionTitle}>SHOP</span>

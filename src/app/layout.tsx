@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import CartDrawer from "@/components/CartDrawer";
 
 export const metadata: Metadata = {
-  title: "Gracious Collections | Vintage Bridal, Lingerie & Occasionwear",
+  title: "Gracious Collections | Vintage Gowns and Heirloom Treasures",
   description:
     "Breathtaking vintage gowns, antique bridal veils, and romantic nightwear carefully selected for the modern woman. Visit our studio for a private experience.",
 };

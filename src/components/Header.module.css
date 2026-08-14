@@ -18,7 +18,7 @@
 }
 
 .mainNav {
-  padding: 24px 0;
+  padding: 16px 0;
 }
 
 .navWrapper {
@@ -112,7 +112,7 @@
 
 .desktopNavigation {
   border-top: 1px solid var(--color-border);
-  padding: 12px 0;
+  padding: 8px 0;
 }
 
 .navList {
