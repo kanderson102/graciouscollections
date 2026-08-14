@@ -1,0 +1,152 @@
+.footer {
+  background-color: #f7f6f2;
+  border-top: 1px solid var(--color-border);
+  padding: 80px 0 40px 0;
+  color: var(--color-fg);
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.column h3 {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.links a {
+  color: rgba(18, 18, 18, 0.7);
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: var(--transition-smooth);
+}
+
+.links a:hover {
+  color: var(--color-gold);
+  padding-left: 4px;
+}
+
+.aboutText {
+  color: rgba(18, 18, 18, 0.75);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.socialLink {
+  color: var(--color-fg);
+  opacity: 0.7;
+  transition: var(--transition-smooth);
+}
+
+.socialLink:hover {
+  opacity: 1;
+  color: var(--color-gold);
+}
+
+.subText {
+  color: rgba(18, 18, 18, 0.7);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  border-bottom: 1px solid var(--color-fg);
+  padding-bottom: 8px;
+}
+
+.input {
+  flex-grow: 1;
+  font-size: 1.3rem;
+  padding: 4px 0;
+  color: var(--color-fg);
+  background: none;
+  border: none;
+}
+
+.input::placeholder {
+  color: rgba(18, 18, 18, 0.4);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.submitBtn {
+  color: var(--color-fg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
+}
+
+.submitBtn:hover {
+  transform: translateX(4px);
+  color: var(--color-gold);
+}
+
+.successMsg {
+  color: var(--color-gold);
+  font-style: italic;
+}
+
+.bottom {
+  border-top: 1px solid rgba(18, 18, 18, 0.05);
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  color: rgba(18, 18, 18, 0.5);
+  letter-spacing: 0.1em;
+}
+
+.copyright {
+  text-transform: uppercase;
+}
+
+.currencyLabel {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Responsive grid layout */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer {
+    padding: 60px 0 30px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
