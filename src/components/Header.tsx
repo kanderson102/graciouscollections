@@ -14,11 +14,6 @@ export const Header: React.FC = () => {
 
   return (
     <header className={styles.header}>
-      {/* Announcement Bar */}
-      <div className={styles.announcement}>
-        <span>FREE US SHIPPING ON ALL ORDERS OVER $200 • COMPLIMENTARY VINTAGE PACKAGING</span>
-      </div>
-
       {/* Main Header Container */}
       <div className={styles.mainNav}>
         <div className="container">

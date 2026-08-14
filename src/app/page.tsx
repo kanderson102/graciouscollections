@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { products } from "@/data/products";
+import HeroCarousel from "@/components/HeroCarousel";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -12,16 +13,7 @@ export default function Home() {
     <div>
       {/* 1. Hero Banner */}
       <section className={styles.hero}>
-        <div className={styles.heroImageWrapper}>
-          <Image
-            src="/images/hero.png"
-            alt="Devotional Vintage Curation"
-            fill
-            priority
-            className={styles.heroImage}
-          />
-          <div className={styles.heroOverlay}></div>
-        </div>
+        <HeroCarousel />
         <div className={styles.heroContent}>
           <p className="fade-in">Curated Antique Styles & Heirloom Textiles</p>
           <h1 className="fade-in">A Devotion to Timeless Grace</h1>
