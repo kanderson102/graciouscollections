@@ -6,11 +6,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import styles from "./HeroCarousel.module.css";
 
 const carouselImages = [
-  "/images/hero_carousel_1.jpg",
-  "/images/hero_carousel_4.jpg", // Blonde girl in field (was 4, now 2) -> maps to hero_carousel_4.jpg
-  "/images/hero_carousel_2.jpg", // Girl reading book in grass (was 2, now 3) -> maps to hero_carousel_2.jpg
-  "/images/hero_carousel_5.jpg", // Meadow walk girl (was 5, now 4) -> maps to hero_carousel_5.jpg
-  "/images/hero_carousel_3.jpg", // Girl reading sheet close-up (was 3, now 5) -> maps to hero_carousel_3.jpg
+  "/images/hero_carousel_1.jpg", // girl by building
+  "/images/hero_carousel_2.jpg", // Girl reading book in grass
+  "/images/hero_carousel_3.jpg", // Girl reading sheet close-up
+  "/images/hero_carousel_4.jpg", // Blonde girl in field
+  "/images/hero_carousel_5.jpg", // Meadow walk girl
 ];
 
 export const HeroCarousel: React.FC = () => {

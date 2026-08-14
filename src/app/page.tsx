@@ -31,10 +31,6 @@ export default function Home() {
             <p style={{ marginTop: "20px" }}>
               At Gracious Collections, we curate vintage gowns, heirloom garments, and traditional treasures that honor your inner radiance and the qualities that make a person beautiful: Love, Devotion, Purity, Depth, and Compassion. Inspired by a legacy of devotion and traditional grace, we bring you pieces that speak of history, presence, and timeless purity.
             </p>
-            <blockquote style={{ marginTop: "32px", borderLeft: "2px solid var(--color-gold)", paddingLeft: "20px", fontStyle: "italic", textAlign: "left", display: "inline-block", maxWidth: "700px" }}>
-              "Your beauty should not come from outward adornment, such as elaborate hairstyles and the wearing of gold jewelry or fine clothes. Rather, it should be that of your inner self, the unfading beauty of a gentle and quiet spirit, which is of great worth in God’s sight. For this is the way the holy women of the past who put their hope in God used to adorn themselves."
-              <cite style={{ display: "block", marginTop: "12px", fontWeight: "600", fontSize: "1.2rem", letterSpacing: "0.05em", fontStyle: "normal", color: "var(--color-gold)" }}>— 1 PETER 3:3-5</cite>
-            </blockquote>
           </div>
         </div>
       </section>
