@@ -17,9 +17,9 @@ export default function Home() {
         <div className={styles.heroContent}>
           <p className="fade-in">Curated Antique Styles & Heirloom Textiles</p>
           <h1 className="fade-in">A Devotion to Timeless Grace</h1>
-          <Link href="/collections/new-in" className="btn fade-in">
-            SHOP NEW IN
-          </Link>
+          <a href="#featured-pieces" className="btn fade-in">
+            SHOP
+          </a>
         </div>
       </section>
 
@@ -36,7 +36,7 @@ export default function Home() {
       </section>
 
       {/* 3. Featured Collection Grid */}
-      <section className={`${styles.featuredSection} section-padding`}>
+      <section id="featured-pieces" className={`${styles.featuredSection} section-padding`}>
         <div className="container">
           <div className={styles.sectionHeader}>
             <p>Shop Our Pieces</p>
