@@ -8,9 +8,9 @@ import styles from "./HeroCarousel.module.css";
 const carouselImages = [
   "/images/hero_building.jpg", // girl by building
   "/images/hero_grass.jpg",    // Girl reading book in grass
+  "/images/hero_redhead.jpg",   // Meadow walk girl
   "/images/hero_blonde.jpg",   // Blonde girl in field
   "/images/hero_book.jpg",    // Girl reading sheet close-up
-  "/images/hero_redhead.jpg",   // Meadow walk girl
 ];
 
 export const HeroCarousel: React.FC = () => {
