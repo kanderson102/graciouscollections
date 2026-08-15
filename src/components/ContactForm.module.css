@@ -1,0 +1,155 @@
+.contactSection {
+  background-color: #f7f6f2; /* matches the journalSection background */
+  border-top: 1px solid var(--color-border);
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.formContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--color-bg); /* white bg container */
+  border: 1px solid var(--color-border);
+  padding: 48px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.sectionHeader h2 {
+  font-size: 3.6rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.sectionHeader p {
+  font-size: 1.2rem;
+  color: var(--color-gold);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 1.1rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-fg);
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--color-border);
+  background-color: #fcfbf9;
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  color: var(--color-fg);
+  transition: var(--transition-smooth);
+  outline: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--color-gold);
+  background-color: var(--color-bg);
+}
+
+.textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.submitBtn {
+  margin-top: 8px;
+  align-self: center;
+  min-width: 220px;
+}
+
+.errorMessage {
+  background-color: rgba(217, 83, 79, 0.05);
+  border-left: 3px solid #d9534f;
+  color: #c9302c;
+  padding: 12px 16px;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+}
+
+.successContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: 64px 40px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  animation: fadeIn 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.successIconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+  margin-bottom: 24px;
+}
+
+.successContainer h3 {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+}
+
+.successContainer p {
+  font-size: 1.5rem;
+  color: rgba(18, 18, 18, 0.7);
+  line-height: 1.8;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .contactSection {
+    padding: 60px 0;
+  }
+  .formContainer,
+  .successContainer {
+    padding: 32px 24px;
+  }
+  .sectionHeader h2 {
+    font-size: 2.8rem;
+  }
+}

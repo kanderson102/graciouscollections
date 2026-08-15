@@ -26,9 +26,6 @@ export const Footer: React.FC = () => {
           <div className={styles.column}>
             <h3>QUICK LINKS</h3>
             <ul className={styles.links}>
-              <li><Link href="/pages/appointments">STUDIO APPOINTMENTS</Link></li>
-              <li><Link href="/pages/concierge">VINTAGE CONCIERGE</Link></li>
-              <li><Link href="/pages/consign">SELL WITH US</Link></li>
               <li><Link href="/pages/privacy">PRIVACY POLICY</Link></li>
               <li><Link href="/pages/refunds">REFUND POLICY</Link></li>
               <li><Link href="/pages/shipping">SHIPPING POLICY</Link></li>

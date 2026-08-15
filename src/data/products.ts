@@ -13,7 +13,7 @@ export interface Product {
 export const products: Product[] = [
   {
     id: "classic-linen-dress",
-    name: "Son de Flor Classic Linen Dress",
+    name: "Son de Flor Linen Dress",
     price: 195,
     category: "Vintage Dresses",
     image: "/images/dress_2.jpg",
@@ -31,7 +31,7 @@ export const products: Product[] = [
   },
   {
     id: "victorian-linen-dress",
-    name: "Son de Flor Victorian Linen Dress",
+    name: "Classic Victorian Linen Dress",
     price: 260,
     category: "Vintage Gowns",
     image: "/images/dress_3.jpg",
@@ -49,7 +49,7 @@ export const products: Product[] = [
   },
   {
     id: "1940s-bridal-nightgown",
-    name: "1940s Silk Puff Sleeve Nightgown",
+    name: "1940s Silk Sleeveless Nightgown",
     price: 185,
     category: "Lingerie",
     image: "/images/dress_1.png",

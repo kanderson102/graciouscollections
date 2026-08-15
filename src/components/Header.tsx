@@ -10,7 +10,6 @@ export const Header: React.FC = () => {
   const { openCart, cartCount } = useCart();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [shopOpen, setShopOpen] = useState(false);
-  const [contactOpen, setContactOpen] = useState(false);
 
   return (
     <header className={styles.header}>
@@ -87,30 +86,14 @@ export const Header: React.FC = () => {
               )}
             </li>
 
-            {/* CONTACT Dropdown */}
-            <li
-              className={styles.dropdownParent}
-              onMouseEnter={() => setContactOpen(true)}
-              onMouseLeave={() => setContactOpen(false)}
-            >
-              <span className={styles.navLink}>
-                CONTACT <ChevronDown size={12} className={styles.chevron} />
-              </span>
-              {contactOpen && (
-                <ul className={styles.dropdownMenu}>
-                  <li><Link href="/pages/appointments">STUDIO APPOINTMENTS</Link></li>
-                  <li><Link href="/pages/concierge">VINTAGE CONCIERGE</Link></li>
-                  <li><Link href="/pages/consign">CONSIGN YOUR DRESS</Link></li>
-                </ul>
-              )}
+            <li>
+              <Link href="/#contact" className={styles.navLink}>CONTACT</Link>
             </li>
 
             <li>
               <Link href="/blogs/journal" className={styles.navLink}>JOURNAL</Link>
             </li>
-            <li>
-              <Link href="/pages/appointments" className={styles.bookBtn}>BOOK APPOINTMENT</Link>
-            </li>
+
           </ul>
         </div>
       </nav>
@@ -134,24 +117,14 @@ export const Header: React.FC = () => {
               </ul>
             </li>
 
-            {/* CONTACT Section */}
             <li>
-              <span className={styles.mobileSectionTitle}>CONTACT</span>
-              <ul className={styles.mobileSubList}>
-                <li><Link href="/pages/appointments" onClick={() => setMobileMenuOpen(false)}>STUDIO APPOINTMENTS</Link></li>
-                <li><Link href="/pages/concierge" onClick={() => setMobileMenuOpen(false)}>VINTAGE CONCIERGE</Link></li>
-                <li><Link href="/pages/consign" onClick={() => setMobileMenuOpen(false)}>CONSIGN YOUR DRESS</Link></li>
-              </ul>
+              <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>CONTACT</Link>
             </li>
 
             <li>
               <Link href="/blogs/journal" onClick={() => setMobileMenuOpen(false)}>JOURNAL</Link>
             </li>
-            <li className={styles.mobileBookLi}>
-              <Link href="/pages/appointments" className="btn btn-full" onClick={() => setMobileMenuOpen(false)}>
-                BOOK APPOINTMENT
-              </Link>
-            </li>
+
           </ul>
         </div>
       )}

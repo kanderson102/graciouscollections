@@ -2,7 +2,7 @@
 
 import React, { use } from "react";
 import Link from "next/link";
-import { Mail, Calendar, Heart, ShieldCheck, Truck, RotateCcw } from "lucide-react";
+import { ShieldCheck, Truck, RotateCcw } from "lucide-react";
 
 interface StaticPageProps {
   params: Promise<{ slug: string }>;
@@ -16,76 +16,7 @@ export default function StaticPage({ params }: StaticPageProps) {
   let subTitle = "";
   let content = null;
 
-  if (slug === "appointments") {
-    pageTitle = "Studio Appointments";
-    subTitle = "Fittings, Styling & Collection Viewing";
-    content = (
-      <div>
-        <p style={pStyle}>
-          We invite you to experience our collection in person at our warm, private studio in Asheville, North Carolina. 
-          Each appointment is completely private, booking the entire space for you and up to two guests.
-        </p>
-        <p style={pStyle}>
-          Whether you are looking for a unique vintage gown, looking to style an archive lingerie look, or wishing to view 
-          our historical veils, our dedicated stylist will guide you with compassion, care, and presence.
-        </p>
-        <div style={boxStyle}>
-          <Calendar size={20} color="#d2c2a4" style={{ marginRight: "16px", flexShrink: 0 }} />
-          <div>
-            <h4 style={boxTitleStyle}>Book a Styling Session</h4>
-            <p style={{ margin: "4px 0 0 0" }}>To schedule a private 90-minute viewing appointment, please email us directly with your preferred dates at:</p>
-            <a href="mailto:appointments@graciouscollections.com" style={linkStyle}>appointments@graciouscollections.com</a>
-          </div>
-        </div>
-      </div>
-    );
-  } else if (slug === "concierge") {
-    pageTitle = "Vintage Concierge";
-    subTitle = "Sourcing Your Dream Vintage Silhouette";
-    content = (
-      <div>
-        <p style={pStyle}>
-          Our Vintage Concierge is a personalized sourcing service designed for those looking for a specific historical era, 
-          garment cut, or fabric texture that is not currently in our catalog.
-        </p>
-        <p style={pStyle}>
-          Leveraging our global network of estate sales, private collectors, and archival networks, we source garments that 
-          resonate with your unique spirit. Focus areas include Edwardian lace gowns, 1930s bias-cut silk crepes, and 1950s tulle.
-        </p>
-        <div style={boxStyle}>
-          <Mail size={20} color="#d2c2a4" style={{ marginRight: "16px", flexShrink: 0 }} />
-          <div>
-            <h4 style={boxTitleStyle}>Sourcing Inquiries</h4>
-            <p style={{ margin: "4px 0 0 0" }}>Share your inspiration boards, size specifications, and timing constraints at:</p>
-            <a href="mailto:concierge@graciouscollections.com" style={linkStyle}>concierge@graciouscollections.com</a>
-          </div>
-        </div>
-      </div>
-    );
-  } else if (slug === "consign") {
-    pageTitle = "Consign With Us";
-    subTitle = "Preserving History & Giving Life to Vintage Pieces";
-    content = (
-      <div>
-        <p style={pStyle}>
-          If you own a beautiful antique wedding gown, a collection of historic hand-made lace, or mid-century silk lingerie 
-          that you wish to pass on, we would love to help you find its next home.
-        </p>
-        <p style={pStyle}>
-          We offer a curated consignment service, taking care of cleaning, archiving, high-end photography, and presenting 
-          your items to our dedicated audience of vintage collectors.
-        </p>
-        <div style={boxStyle}>
-          <Heart size={20} color="#d2c2a4" style={{ marginRight: "16px", flexShrink: 0 }} />
-          <div>
-            <h4 style={boxTitleStyle}>Consignment Submissions</h4>
-            <p style={{ margin: "4px 0 0 0" }}>Please send clear photographs, measurements, and any historical notes about condition or provenance to:</p>
-            <a href="mailto:consign@graciouscollections.com" style={linkStyle}>consign@graciouscollections.com</a>
-          </div>
-        </div>
-      </div>
-    );
-  } else if (slug === "privacy") {
+  if (slug === "privacy") {
     pageTitle = "Privacy Policy";
     subTitle = "Our Commitment to Safeguarding Your Presence";
     content = (

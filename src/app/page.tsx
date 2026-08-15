@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { products } from "@/data/products";
+import ContactForm from "@/components/ContactForm";
+import NewsletterSubscribe from "@/components/NewsletterSubscribe";
 import HeroCarousel from "@/components/HeroCarousel";
 import styles from "./Home.module.css";
 
@@ -70,7 +72,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Showroom Banner */}
+      {/* 4. Showroom Banner */}
       <section className={styles.showroomBanner}>
         <div className={styles.showroomImageWrapper}>
           <Image
@@ -83,42 +85,13 @@ export default function Home() {
           <div className={styles.showroomOverlay}></div>
         </div>
         <div className={styles.showroomContent}>
-          <h2 className="fade-in">Consignment</h2>
-          <p className="fade-in">Buy and sell your pre-loved vintage dresses with us</p>
-          <Link href="/pages/consign" className="btn fade-in">
-            INQUIRE
-          </Link>
+          <h2 className="fade-in">Newsletter</h2>
+          <p className="fade-in">Sign up to receive our latest collections and news</p>
+          <NewsletterSubscribe />
         </div>
       </section>
 
-      {/* 4. Promotional Services Banners */}
-      <section className={`${styles.promoSection} section-padding`}>
-        <div className="container">
-          <div className={styles.promoGrid}>
-            <div className={styles.promoCol}>
-              <h3>Sell With Us</h3>
-              <p>Consign your heirloom vintage gowns, dresses, antique lace veil, or luxury nightwear with us.</p>
-              <Link href="/pages/consign" className={styles.promoLink}>
-                Learn More
-              </Link>
-            </div>
-            <div className={styles.promoCol}>
-              <h3>Studio Appointments</h3>
-              <p>Visit our private, warm-lit studio in Asheville, North Carolina for a magical, dedicated fitting appointment.</p>
-              <Link href="/pages/appointments" className={styles.promoLink}>
-                Book Appointment
-              </Link>
-            </div>
-            <div className={styles.promoCol}>
-              <h3>Vintage Concierge</h3>
-              <p>Looking for a specific era or garment? Let our specialists source it from our global network.</p>
-              <Link href="/pages/concierge" className={styles.promoLink}>
-                Enquire Now
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* 5. From the Journal */}
       <section className={`${styles.journalSection} section-padding`}>
@@ -189,6 +162,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ContactForm />
     </div>
   );
 }
