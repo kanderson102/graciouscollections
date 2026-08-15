@@ -62,8 +62,8 @@ export default function JournalPage() {
           {/* Post 2 */}
           <article id="victorian-collars" style={articleStyle}>
             <div style={imgWrapperStyle}>
-              <Image 
-                src="/images/dress_3.png" 
+               <Image 
+                src="/images/dress_3.jpg" 
                 alt="Victorian Gowns"
                 fill
                 sizes="(max-width: 900px) 100vw, 900px"

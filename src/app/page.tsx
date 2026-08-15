@@ -151,7 +151,7 @@ export default function Home() {
             <Link href="/blogs/journal#victorian-collars" className={styles.journalCard}>
               <div className={styles.journalImageWrapper}>
                 <Image
-                  src="/images/dress_3.png"
+                  src="/images/dress_3.jpg"
                   alt="History of the Victorian High Collar"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
